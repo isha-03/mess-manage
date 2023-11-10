@@ -45,7 +45,7 @@ export default function Search() {
  
         </div>
 
-        <div className="input-group my-3 mb-3">
+        <div className="input-group my-3 mb-3 border" style={{borderRadius:7}}>
         <span className="input-group-text"> Gender Preference </span>
         <div className="form-check form-check-inline my-3 mx-3">
         <input className="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"/>
