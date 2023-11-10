@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function Create() {
+  const [duration,setDuration]=useState(1);
   return (
     <>
     <div className="container border border-2 p-3" style={{borderRadius:10, width:800}}>
@@ -56,6 +57,20 @@ export default function Create() {
         <label className="form-check-label" htmlFor="inlineCheckbox2">Male</label>
         </div>
         </div>
+        <div className="input-group my-3 mb-3 border" style={{ borderRadius: 7 }}>
+        <span className="input-group-text">Duration</span>
+        <input onChange={(event)=>setDuration(event.target.value)}
+          type="range"
+          className="form-range"
+          min="1"
+          max="30"
+          step="1"
+          id="durationRange"
+        />
+        <label htmlFor="durationRange" className="form-label mx-3">
+          <span id="durationValue">{duration}</span> days
+        </label>
+      </div>
         <div className="text-center">
         <button type="button" class="btn btn-outline-success">Create</button>
         </div>

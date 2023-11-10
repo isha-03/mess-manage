@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Navbar() {
   return (
-    <>
+    <div className='w-75 mx-auto '>
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
     <div className="container-fluid">
     <a className="navbar-brand" href="/">Match My Trip</a>
@@ -25,7 +25,7 @@ export default function Navbar() {
             </svg>
           </button>
           
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu dropdown-menu-left">
             <li><a class="dropdown-item" href="#">Action</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><hr class="dropdown-divider"/></li>
@@ -37,6 +37,6 @@ export default function Navbar() {
     </div>
   
     </nav>
-    </>
+    </div>
   );
 }
