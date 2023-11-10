@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default function Create() {
+export default function Search() {
   return (
     <>
     <div className="container border border-2 p-3" style={{borderRadius:10, width:800}}>
         <div className="text-center">
-        <h1>Create Trip</h1>
+        <h1>Search Trip</h1>
         </div>
         <div className="input-group mb-3 my-3">
         <label className="input-group-text" htmlFor="inputGroupSelect01">From</label>
@@ -57,7 +57,11 @@ export default function Create() {
         </div>
         </div>
         <div className="text-center">
-        <button type="button" class="btn btn-outline-success">Create</button>
+        <button type="button" class="btn btn-outline-success">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg> Search
+        </button>
         </div>
         
 
