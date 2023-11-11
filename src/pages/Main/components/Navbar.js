@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <div className='w-75 mx-auto '>
@@ -28,7 +28,7 @@ export default function Navbar() {
           <ul class="dropdown-menu dropdown-menu-left">
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Logout</a></li>
+            <li><a class="dropdown-item" href="#"><Link to="/" style={{textDecoration:'none',color:'black'}}>Logout</Link></a></li>
           </ul>
         </div>
         
