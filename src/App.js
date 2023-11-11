@@ -11,10 +11,10 @@ function App() {
   return (
     <div className='w-100 '>
     <Navbar/>;
-    <div className='my-3 mx-auto w-50 '>
-    <button type="button" class="btn btn-primary mx-5" onClick={()=>setoption('Create')}>Create</button>
-    <button type="button" class="btn btn-primary mx-5" onClick={()=>setoption('Search')}>Search</button>
-    <button type="button" class="btn btn-primary mx-5 " onClick={()=>setoption('Status')}>Status</button>
+    <div className='my-3 mx-auto w-50 border border-2 text-center p-2'>
+    <button type="button" class="btn btn-outline-dark mx-5" onClick={()=>setoption('Create')} >Create</button>
+    <button type="button" class="btn btn-outline-dark mx-5" onClick={()=>setoption('Search')}>Search</button>
+    <button type="button" class="btn btn-outline-dark mx-5 " onClick={()=>setoption('Status')}>Status</button>
     </div>
     {option==='Create'?<Create/>:(option==='Search'?<Search/>:<Status/>)}
 

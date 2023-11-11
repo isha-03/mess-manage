@@ -19,17 +19,16 @@ export default function Navbar() {
       
       <div class="d-flex nav-item dropdown dropleft">
           
-          <button className="btn btn-outline-success dropdown-toggle dropleft" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button className="btn btn-outline-dark dropdown-toggle dropleft" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                 <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
             </svg>
           </button>
           
           <ul class="dropdown-menu dropdown-menu-left">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
           </ul>
         </div>
         
