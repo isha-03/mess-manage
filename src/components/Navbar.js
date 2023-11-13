@@ -12,7 +12,7 @@ export default function Navbar() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
+        <Link to="/home" style={{textDecoration:'none',color:'black'}}>Home</Link>
         </li>
         
       </ul>
@@ -26,7 +26,7 @@ export default function Navbar() {
           </button>
           
           <ul class="dropdown-menu dropdown-menu-left">
-            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#"><Link to="/profile" style={{textDecoration:'none',color:'black'}}>Profile</Link></a></li>
             <li><hr class="dropdown-divider"/></li>
             <li><a class="dropdown-item" href="#"><Link to="/" style={{textDecoration:'none',color:'black'}}>Logout</Link></a></li>
           </ul>
