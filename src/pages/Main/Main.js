@@ -4,11 +4,12 @@ import Navbar from '../../components/Navbar';
 import Create from './components/Create';
 import Search from './components/Search';
 import Status from './components/Status';
-import Success from './components/Success';
+// import Success from './components/Success';
 import Trip from './components/Trip';
-import Unavailable from './components/Unavailable';
+
 export default function Main() {
-  const [option,setoption]=useState('Create');
+  const [option,setoption]=useState('Search');
+  const [view,setView]=useState([false,false,false,false]);
   return (
     <>
     <div className='w-100 '>
@@ -19,18 +20,14 @@ export default function Main() {
     <button type="button" class="btn btn-outline-dark mx-5" onClick={()=>setoption('Search')}>Search</button>
     <button type="button" class="btn btn-outline-dark mx-5 " onClick={()=>setoption('Status')}>Status</button>
     </div>
-    {option==='Create'?<Create/>:(option==='Search'?<Search/>:<Status/>)}
+    {option==='Create'?<Create/>:(option==='Search'?<Search/>:<Status view={view} setView={setView}/>)}
 
     </div>
-    <div className='my-5'>
-    <Success/>
-    </div>
-    <div className="my-5">
-      <Trip/>
-    </div>
-    <div className="my-5">
-      <Unavailable/>
-    </div>
+    {
+        
+      view.some((value) => value === true)?<div className="my-5"><Trip/></div>:null
+    }
+
     </>
   );
 }

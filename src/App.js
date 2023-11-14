@@ -7,12 +7,17 @@ import Forgot from './pages/Forgot/Forgot';
 import Signup from './pages/Signup/Signup';
 import Profile from './pages/Profile/Profile';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Unavailable from './pages/Unavailable';
 function App() {
   
 
   return (
     <>
+    <ToastContainer/>
     <Router>
+
       <Routes>
         <Route exact path="/" element={<Login/>} />
         <Route path="/Login" element={<Main/>} />
@@ -21,9 +26,11 @@ function App() {
         <Route path="/Forgotpass/Signup" element={<Signup/>} />
         <Route path="/profile" element={<Profile/>} />
         <Route path="/home" element={<Main/>} />
+        <Route path="/unavailable" element={<Unavailable/>}/>
       </Routes>
+
     </Router>
-    
+
     </>
   );
   

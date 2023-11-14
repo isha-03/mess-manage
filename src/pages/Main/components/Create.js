@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Create() {
   const [duration,setDuration]=useState(1);
@@ -72,7 +74,7 @@ export default function Create() {
         </label>
       </div>
         <div className="text-center">
-        <button type="button" class="btn btn-outline-success">Create</button>
+        <button type="button" class="btn btn-outline-success" onClick={()=>toast.success('Trip created successfully')}>Create</button>
         </div>
         
 
