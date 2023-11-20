@@ -11,14 +11,17 @@ export default function Create() {
         <div className="text-center">
         <h1>Create Trip</h1>
         </div>
-        <div className="input-group mb-3 my-3">
+        <div className="input-group mb-3 my-3" >
         <label className="input-group-text" htmlFor="inputGroupSelect01">From</label>
-        <SearchableDropdown />
+        <input type="text" aria-label="First name" className="form-control"/>
+        <SearchableDropdown/>
         </div>
 
         <div className="input-group mb-3 ">
         <label className="input-group-text" htmlFor="inputGroupSelect01">Destination</label>
+        <input type="text" aria-label="First name" className="form-control"/>
         <SearchableDropdown/>
+
         </div>
        
         <div className="input-group">

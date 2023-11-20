@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchableDropdown from './Dropdown'
 export default function Search() {
   return (
     <>
@@ -7,7 +8,7 @@ export default function Search() {
         <div className="text-center">
         <h1>Search Trip</h1>
         </div>
-        <div className="input-group mb-3 my-3">
+        {/* <div className="input-group mb-3 my-3">
         <label className="input-group-text" htmlFor="inputGroupSelect01">From</label>
         <select className="form-select" id="inputGroupSelect01">
             <option selected>Choose source</option>
@@ -37,6 +38,18 @@ export default function Search() {
             <option value="8">Barnala</option>
             <option value="9">Sangrur</option>
         </select>
+        </div> */}
+         <div className="input-group mb-3 my-3" >
+        <label className="input-group-text" htmlFor="inputGroupSelect01">From</label>
+        <input type="text" aria-label="First name" className="form-control"/>
+        <SearchableDropdown/>
+        </div>
+
+        <div className="input-group mb-3 ">
+        <label className="input-group-text" htmlFor="inputGroupSelect01">Destination</label>
+        <input type="text" aria-label="First name" className="form-control"/>
+        <SearchableDropdown/>
+
         </div>
        
         <div className="input-group">
