@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SearchableDropdown from './Dropdown'
 
 export default function Create() {
   const [duration,setDuration]=useState(1);
@@ -12,34 +13,12 @@ export default function Create() {
         </div>
         <div className="input-group mb-3 my-3">
         <label className="input-group-text" htmlFor="inputGroupSelect01">From</label>
-        <select className="form-select" id="inputGroupSelect01">
-            <option selected>Choose source</option>
-            <option value="1">Chandigarh</option>
-            <option value="2">Delhi</option>
-            <option value="3">Gurgaon</option>
-            <option value="4">Jalandhar</option>
-            <option value="5">Ludhiana</option>
-            <option value="6">Patiala</option>
-            <option value="7">Bathinda</option>
-            <option value="8">Barnala</option>
-            <option value="9">Sangrur</option>
-        </select>
+        <SearchableDropdown />
         </div>
 
-        <div className="input-group mb-3">
+        <div className="input-group mb-3 ">
         <label className="input-group-text" htmlFor="inputGroupSelect01">Destination</label>
-        <select className="form-select" id="inputGroupSelect01">
-            <option selected>Choose destination</option>
-            <option value="1">Chandigarh</option>
-            <option value="2">Delhi</option>
-            <option value="3">Gurgaon</option>
-            <option value="4">Jalandhar</option>
-            <option value="5">Ludhiana</option>
-            <option value="6">Patiala</option>
-            <option value="7">Bathinda</option>
-            <option value="8">Barnala</option>
-            <option value="9">Sangrur</option>
-        </select>
+        <SearchableDropdown/>
         </div>
        
         <div className="input-group">

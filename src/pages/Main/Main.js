@@ -27,7 +27,7 @@ export default function Main() {
     
     {
         
-      view.some((value) => value === true)?<div className="my-5"><Trip/></div>:null
+      view.some((value) => value === true) && option==='Status'?<div className="my-5"><Trip/></div>:null
     }
     </div>
 
