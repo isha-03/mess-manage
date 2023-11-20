@@ -3,7 +3,7 @@ import React from 'react';
 export default function Profilebox() {
   return (
     <>
-        <div className="container border border-3" style={{width:800}}>
+        <div className="container border border-3" style={{width:800,backgroundColor:'#c1bebe'}}>
         <form className='my-3'>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Name</span>
@@ -21,7 +21,7 @@ export default function Profilebox() {
                 <span class="input-group-text" id="basic-addon4">Phone-No.</span>
                 <input type="tel" class="form-control" placeholder="Phone" aria-label="Phone" aria-describedby="basic-addon4"/>
             </div>
-            <div class="input-group mb-3 border" style={{borderRadius:7}}>
+            <div class="input-group mb-3 border" style={{borderRadius:7, backgroundColor:'white'}}>
                 <span class="input-group-text" id="basic-addon5">Gender</span>
                 <div className="px-3 pt-2">
                 <div class="form-check form-check-inline">

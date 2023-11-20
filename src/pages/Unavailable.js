@@ -9,7 +9,7 @@ export default function Unavailable() {
     <>
     <Navbar/>
     <div className='my-5'>
-    <div className="container border border-2 p-3" style={{borderRadius:10, width:800}}>
+    <div className="container border border-2 p-3" style={{borderRadius:10, width:800,backgroundColor:'#c1bebe'}}>
         <div>
         
         <button type="button" class="btn btn-outline-secondary pb-2" onClick={()=>navigate(-1)}>
@@ -20,7 +20,7 @@ export default function Unavailable() {
         <div className="text-center">
         <h1>Search Trip</h1>
         </div>
-        <div className="border my-3 text-center">
+        <div className="border my-3 text-center" style={{backgroundColor:'white'}}>
             <h5 className='my-4'>OOPS!! No trip available</h5>
             <button type="button" class="btn my-3 btn-outline-secondary">
               Alert Me 

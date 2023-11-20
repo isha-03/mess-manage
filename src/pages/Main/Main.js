@@ -17,18 +17,19 @@ export default function Main() {
     <div className='w-100 bg-image ' id='123' style={{ backgroundImage: bgImg }}>
     
     <Navbar/>;
-    <div className='my-3 mx-auto w-50 border border-2 text-center p-2'>
-    <button type="button" class="btn btn-outline-dark mx-5" onClick={()=>setoption('Create')} >Create</button>
-    <button type="button" class="btn btn-outline-dark mx-5" onClick={()=>setoption('Search')}>Search</button>
-    <button type="button" class="btn btn-outline-dark mx-5 " onClick={()=>setoption('Status')}>Status</button>
+    <div className='my-3 mx-auto w-50 border border-2 text-center p-2' style={{backgroundColor:'#c1bebe', borderRadius:15}}>
+    <button type="button" class="btn btn-light mx-5" onClick={()=>setoption('Create')} >Create</button>
+    <button type="button" class="btn btn-light mx-5" onClick={()=>setoption('Search')}>Search</button>
+    <button type="button" class="btn btn-light mx-5 " onClick={()=>setoption('Status')}>Status</button>
     </div>
     {option==='Create'?<Create/>:(option==='Search'?<Search/>:<Status view={view} setView={setView}/>)}
 
-    </div>
+    
     {
         
       view.some((value) => value === true)?<div className="my-5"><Trip/></div>:null
     }
+    </div>
 
     </>
   );

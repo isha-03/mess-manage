@@ -10,11 +10,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Unavailable from './pages/Unavailable';
+import MyImage from '../src/pages/Main/bg.jpg';
 function App() {
   
-
+  const bgImg = `url(${MyImage})`;
   return (
     <>
+    <div className='w-100 bg-image ' id='123' style={{ backgroundImage: bgImg,height:800}}>
+    
     <ToastContainer/>
     <Router>
 
@@ -30,7 +33,7 @@ function App() {
       </Routes>
 
     </Router>
-
+    </div>
     </>
   );
   

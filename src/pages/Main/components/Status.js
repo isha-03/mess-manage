@@ -9,12 +9,12 @@ export default function Status({view,setView}) {
       };
   return (
     <>
-    <div className="container border border-2" style={{borderRadius:10, width:800}}>
+    <div className="container border border-2" style={{borderRadius:10, width:800,backgroundColor:'#c1bebe'}}>
         <div className="text-center my-3">
             <h1>Trip Status</h1>
         </div>
         
-        <div class="d-flex my-3 border align-items-center" style={{borderRadius:15}}>
+        <div class="d-flex my-3 border align-items-center" style={{borderRadius:15, backgroundColor:'white'}}>
             <div class="p-2 flex-fill">1.</div>
             <div class="p-2 flex-fill">Destination</div>
             <div class="p-2 flex-fill">1-Dec-2023</div>
@@ -32,7 +32,7 @@ export default function Status({view,setView}) {
             </button>
             </div>
         </div>
-        <div class="d-flex my-3 border align-items-center" style={{borderRadius:15}}>
+        <div class="d-flex my-3 border align-items-center" style={{borderRadius:15, backgroundColor:'white'}}>
             <div class="p-2 flex-fill">2.</div>
             <div class="p-2 flex-fill">Destination</div>
             <div class="p-2 flex-fill">1-Dec-2023</div>
@@ -50,7 +50,7 @@ export default function Status({view,setView}) {
             </button>
             </div>
         </div>
-        <div class="d-flex my-3 border align-items-center" style={{borderRadius:15}}>
+        <div class="d-flex my-3 border align-items-center" style={{borderRadius:15, backgroundColor:'white'}}>
             <div class="p-2 flex-fill">3.</div>
             <div class="p-2 flex-fill">Destination</div>
             <div class="p-2 flex-fill">1-Dec-2023</div>
@@ -68,7 +68,7 @@ export default function Status({view,setView}) {
             </button>
             </div>
         </div>
-        <div class="d-flex my-3 border align-items-center" style={{borderRadius:15}}>
+        <div class="d-flex my-3 border align-items-center" style={{borderRadius:15, backgroundColor:'white'}}>
             <div class="p-2 flex-fill">4.</div>
             <div class="p-2 flex-fill">Destination</div>
             <div class="p-2 flex-fill">1-Dec-2023</div>
