@@ -8,7 +8,7 @@ const {createTrip,getTrips}=require("../controllers/tripController");
 
 //Map with requests
 router.post("/trips/create",createTrip);
-router.get("/trips",getTrips);
+router.get("/trips/find",getTrips);
 
 
 //export

@@ -23,8 +23,7 @@ export default function Create() {
   };
   
   const handleDateChange = (event) => {
-    console.log(event.target.value);
-    console.log(typeof event.target.value);
+    
     setTripData({ ...tripData, date: event.target.value });
   };
   
@@ -64,35 +63,35 @@ export default function Create() {
         <div className="input-group mb-3 my-3" >
         <label className="input-group-text" htmlFor="inputGroupSelect01">From</label>
         {/* <input type="text" aria-label="First name" className="form-control" /> */}
-        <select  className="form-select" id="inputGroupSelect01" onChange={handleSourceChange}>
-            <option selected >Choose source</option>
-            <option value="1">Chandigarh</option>
-            <option value="2">Delhi</option>
-            <option value="3">Gurgaon</option>
-            <option value="4">Jalandhar</option>
-            <option value="5">Ludhiana</option>
-            <option value="6">Patiala</option>
-            <option value="7">Bathinda</option>
-            <option value="8">Barnala</option>
-            <option value="9">Sangrur</option>
-        </select>
+        <select className="form-select" id="inputGroupSelect01" onChange={handleSourceChange}>
+  <option defaultValue>Choose source</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Gurgaon">Gurgaon</option>
+  <option value="Jalandhar">Jalandhar</option>
+  <option value="Ludhiana">Ludhiana</option>
+  <option value="Patiala">Patiala</option>
+  <option value="Bathinda">Bathinda</option>
+  <option value="Barnala">Barnala</option>
+  <option value="Sangrur">Sangrur</option>
+</select>
         </div>
 
         <div className="input-group mb-3 ">
         <label className="input-group-text" htmlFor="inputGroupSelect01">Destination</label>
         {/* <input type="text" aria-label="First name" className="form-control" onChange={handleDestChange}/> */}
         <select className="form-select" id="inputGroupSelect01" onChange={handleDestChange}>
-            <option selected>Choose Destination</option>
-            <option value="1">Chandigarh</option>
-            <option value="2">Delhi</option>
-            <option value="3">Gurgaon</option>
-            <option value="4">Jalandhar</option>
-            <option value="5">Ludhiana</option>
-            <option value="6">Patiala</option>
-            <option value="7">Bathinda</option>
-            <option value="8">Barnala</option>
-            <option value="9">Sangrur</option>
-        </select>
+  <option defaultValue>Choose source</option>
+  <option value="Chandigarh">Chandigarh</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Gurgaon">Gurgaon</option>
+  <option value="Jalandhar">Jalandhar</option>
+  <option value="Ludhiana">Ludhiana</option>
+  <option value="Patiala">Patiala</option>
+  <option value="Bathinda">Bathinda</option>
+  <option value="Barnala">Barnala</option>
+  <option value="Sangrur">Sangrur</option>
+</select>
 
         </div>
        

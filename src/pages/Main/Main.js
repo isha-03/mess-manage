@@ -22,7 +22,7 @@ export default function Main() {
     <button type="button" class="btn btn-light mx-5" onClick={()=>setoption('Search')}>Search</button>
     <button type="button" class="btn btn-light mx-5 " onClick={()=>setoption('Status')}>Status</button>
     </div>
-    {option==='Create'?<Create/>:(option==='Search'?<Search/>:<Status view={view} setView={setView}/>)}
+    {option==='Create'?<Create/>:(option==='Search'?<Search  setoption={setoption}/>:(option==='Status')?<Status view={view} setView={setView}/>:(<></>))}
 
     
     {

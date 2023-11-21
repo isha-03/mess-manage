@@ -32,13 +32,27 @@ exports.createTrip = async (req, res) => {
 
 exports.getTrips = async (req, res) => {
   try {
-    const trips = await Trip.find({});
-    res.status(100).json({
+    const { source, dest, date, genderPreference } = req.query;
+    
+    // Construct the query object based on provided parameters
+    const query = {};
+    if (source) query.source = source;
+    if (dest) query.dest = dest;
+    if (date) query.date = date;
+    if (genderPreference) query.genderPreference = genderPreference;
+
+    const trips = await Trip.find(query);
+   
+    res.json({
+      success: true,
       data: trips,
     });
-  } catch {
+    console.log(trips);
+  } catch (error) {
+    console.error('Error fetching trips:', error);
     res.status(500).json({
       success: false,
+      message: 'Error fetching trips',
     });
   }
 };
