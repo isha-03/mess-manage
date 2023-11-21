@@ -37,11 +37,15 @@ const cities = [
     { value: '32', label: 'Patiala' },
   ];
 
-const SearchableDropdown = () => {
+const SearchableDropdown = ({tripData,setTripData,which}) => {
   const [selectedCity, setSelectedCity] = useState(null);
-
+  
   const handleCityChange = (selectedOption) => {
     setSelectedCity(selectedOption);
+    if(which==="Source")
+      setTripData({ ...tripData, source: selectedCity });
+    else 
+      setTripData({ ...tripData, dest: selectedCity });
   };
 
   return (
