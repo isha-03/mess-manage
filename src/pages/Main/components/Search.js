@@ -65,7 +65,7 @@ export default function Search({setoption}) {
 }
   return (
     <>
-    <div className="container border border-2 p-3" style={{borderRadius:10, width:800,backgroundColor:'#c1bebe'}}>
+    <div className="container border border-2 p-3 mb-4" style={{borderRadius:10, width:800,backgroundColor:'#c1bebe'}}>
         <div className="text-center">
         <h1>Search Trip</h1>
         </div>
@@ -131,6 +131,8 @@ export default function Search({setoption}) {
             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
         </svg> Search
         </button>
+        </div>
+        </div>
         {/* </Link> */}
         {
           showResults===true &&
@@ -140,7 +142,7 @@ export default function Search({setoption}) {
       </div>
 
       <div className="d-flex my-3 border align-items-center" style={{ borderRadius: 15, backgroundColor: 'white' }}>
-        <div className="p-2 flex-fill">No.</div>
+        <div className="px-5 flex-fill">No.</div>
         <div className="p-2 flex-fill">Source</div>
         <div className="p-2 flex-fill">Destination</div>
         <div className="p-2 flex-fill">Date</div>
@@ -149,20 +151,20 @@ export default function Search({setoption}) {
       </div>
 
       {matchingTrips.map((trip, index) => (
-        <div className="d-flex my-3 border align-items-center" style={{ borderRadius: 15, backgroundColor: 'white' }} key={trip._id}>
+        <div className="d-flex my-3 border align-items-center text-center" style={{ borderRadius: 15, backgroundColor: 'white' }} key={trip._id}>
           <div className="p-2 flex-fill">{index + 1}.</div>
           <div className="p-2 flex-fill">{trip.source}</div>
           <div className="p-2 flex-fill">{trip.dest}</div>
           <div className="p-2 flex-fill">{trip.date}</div>
-          <div className="p-2 flex-fill">{/* Display members or any other relevant data for each trip */}</div>
+          <div className="px-5 flex-fill">{/* Display members or any other relevant data for each trip */}----</div>
           {/* Add more columns here if needed */}
         </div>
       ))}
     </div>
 
         }
-        </div>
-    </div>
+        
+    
     </>
   );
 }

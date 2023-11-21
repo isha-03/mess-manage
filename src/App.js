@@ -16,7 +16,7 @@ function App() {
   const bgImg = `url(${MyImage})`;
   return (
     <>
-    <div className='w-100 bg-image ' id='123' style={{ backgroundImage: bgImg,height:800}}>
+    <div className='w-100 bg-image ' id='123' style={{ backgroundImage: bgImg,height:700}}>
     
     <ToastContainer/>
     <Router>
