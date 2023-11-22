@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios';
 import SearchableDropdown from './Dropdown'
 import Unavailable from '../../Unavailable';
 export default function Search({setoption}) {
+  const navigate=useNavigate();
   const [tripData, setTripData] = useState({
     source: '',
     dest: '',
@@ -55,6 +56,7 @@ export default function Search({setoption}) {
         setShowResults(true);
       } else {
         setShowResults(false);
+        navigate('/unavailable');
       }
    
       console.log(response.data); // Handle response appropriately
@@ -142,7 +144,7 @@ export default function Search({setoption}) {
       </div>
 
       <div className="d-flex my-3 border align-items-center" style={{ borderRadius: 15, backgroundColor: 'white' }}>
-        <div className="px-5 flex-fill">No.</div>
+        <div className="p-2 flex-fill">No.</div>
         <div className="p-2 flex-fill">Source</div>
         <div className="p-2 flex-fill">Destination</div>
         <div className="p-2 flex-fill">Date</div>
