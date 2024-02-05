@@ -5,7 +5,7 @@ export default function Nav() {
     <>
     <nav class="navbar navbar-expand-lg text-center" style={{backgroundColor:'#c1bebe'}}>
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Match My Trip</a>
+            <a class="navbar-brand" href="#">Mess Manager</a>
         </div>
     </nav>
     </>

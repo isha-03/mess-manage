@@ -11,7 +11,7 @@ export default function Login() {
       }
   return (
     <>
-    <div className='container mt-5 text-bg-dark p-3' style={{width:500,height: 550, backgroundColor:'grey',borderRadius: 10}}>
+    <div className='container mt-1 text-bg-dark p-3' style={{width:500,height: 550, backgroundColor:'grey',borderRadius: 10}}>
       <p className="bgimg mb-5" style={{marginLeft:185,fontSize:35,fontFamily:'Hubballi'}}>Login</p>
       {/* <img src="D:\Car-parking project\car-parking\src\Components\parking.jpg" alt="" class="bg-image"/> */}
       <form>
@@ -28,13 +28,13 @@ export default function Login() {
     <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
     <label className="form-check-label" for="exampleCheck1" style={{color:'grey'}}>remember me</label>
   </div>
-  <Link to="Login"><button type="submit" className="btn btn-outline-success" style={{marginLeft:65, fontFamily:'Inconsolata',borderRadius: 50,width: 350}}><Link to="Login" style={{textDecoration:'none',color:'white'}}>Login</Link></button></Link>
+  <button type="submit" className="btn btn-outline-success" style={{marginLeft:65, fontFamily:'Inconsolata',borderRadius: 50,width: 350}}>Login</button>
   
   
   <div id="emailHelp" className="form-text mt-5" style={{color:'grey', marginLeft:135}}>Don't have an account? <Link to="Signup" style={{textDecoration:'none',color:'blue'}}>SignUp</Link></div>
 </form>
     </div>
-    <div id="emailHelp" className="form-text mt-5" style={{color:'black', marginLeft:690}}>Forgot password? <Link to="Forgotpass" style={{textDecoration:'none',color:'blue'}}>click here</Link></div>
+    <div id="emailHelp" className="form-text mt-2" style={{color:'black', marginLeft:690}}>Forgot password? <Link to="Forgotpass" style={{textDecoration:'none',color:'blue'}}>click here</Link></div>
     </>
   );
 }
